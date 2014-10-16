@@ -1,0 +1,46 @@
+.w10 {	width: 10%;	}
+.w15 {	width: 15%;	}
+.w20 {	width: 20%;	}
+.w25 {	width: 25%;	}
+.w30 {	width: 30%;	}
+.w35 {	width: 35%;	}
+.w40 {	width: 40%;	}
+.w45 {	width: 45%;	}
+.w50 {	width: 50%;	}
+.w55 {	width: 55%;	}
+.w60 {	width: 60%;	}
+.w75 {	width: 75%;	}
+.w80 {	width: 80%;	}
+.w100 {	width: 100%;	}
+
+.clearfix:after {
+	content: " ";
+	visibility: hidden;
+	display: block;
+	height: 0;
+	clear: both;
+}
+
+.fleft {	float: left !important;	}
+.fright {	float: right !important;	}
+.clear {	clear: both;	}
+
+.automargin {	margin-left: auto; margin-right: auto;	}
+.margin1em {	margin: 1em;	}
+.margin2em {	margin: 2em;	}
+.margin1emt {	margin-top: 1em;	}
+.margin2emt {	margin-top: 2em;	}
+.margin1emr {	margin-right: 1em;	}
+.margin2emr {	margin-right: 2em;	}
+.margin1emb {	margin-bottom: 1em;	}
+.margin2emb {	margin-bottom: 2em;	}
+.margin1eml {	margin-left: 1em;	}
+.margin2eml {	margin-left: 2em;	}
+.margin1em.fright, .margin2em.fright {	margin-right: 0;	}
+.margin1em.fleft, .margin2em.fleft {	margin-left: 0;	}
+
+.center {	text-align: center;	}
+.left {		text-align: left;	}
+.right {	text-align: right;	}
+
+.small {	font-size: 0.8em;	}

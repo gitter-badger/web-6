@@ -1,0 +1,26 @@
+@font-face {
+	font-family: DynaGrotesk;
+    src: url('fonts/dynagroteskde-webfont.eot');
+    src: url('fonts/dynagroteskde-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/dynagroteskde-webfont.otf') format('opentype');
+ 	font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+	font-family: DynaGrotesk;
+	src: url('fonts/dynagroteskdebold-webfont.eot');
+    src: url('fonts/dynagroteskdebold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/dynagroteskdebold-webfont.otf') format('opentype');
+ 	font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+	font-family: DynaGrotesk;
+	src: url('fonts/dynagroteskdebolditalic-webfont.eot');
+    src: url('fonts/dynagroteskdebolditalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/dynagroteskdebolditalic-webfont.otf') format('opentype');
+ 	font-weight: bold;
+    font-style: italic;
+}

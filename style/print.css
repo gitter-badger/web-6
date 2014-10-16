@@ -1,0 +1,13 @@
+@media print {
+
+	body {
+		font-family: Arial, Verdana, Helvetica, Sans-Serif;
+		font-size: 11pt;
+		color: #000000;
+	}
+
+	.noprint, header, footer {
+		display: none;
+	}
+
+}

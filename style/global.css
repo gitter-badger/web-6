@@ -1,0 +1,268 @@
+@import url("helpers.css");
+@import url("responsive.css");
+@import url("print.css");
+@import url("custom.css");
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: Arial, Verdana, Helvetica, Sans-Serif;
+	font-size: 14pt;
+	color: #FFFFFF;
+	background-color: #000000;
+}
+
+header {
+	position: fixed;
+	background-color: #13171B;
+	width: 100%;
+	top: 0;
+	z-index: 100;
+}
+
+header ul {
+	list-style-type: none;
+	margin: 0 0 0 0.8rem;
+	padding: 0;
+}
+
+header ul li {
+	float: left;
+}
+
+header ul li a {
+	display: block;
+	text-transform: uppercase;
+	margin-right: 0.8em;
+	padding: 0.8rem;
+	color: #838C95;
+}
+
+header ul li a.highlight {
+	color: #FFFFFF;
+}
+
+header .twitter {
+	background: url('../images/twitter.png') no-repeat center;
+	background-size: 2rem;
+	display: block;
+	height: 2rem;
+	width: 2rem;
+	margin: 0.5rem 2rem 0rem 1rem;
+	float: right;
+}
+
+footer, section {
+	margin: 0;
+	padding: 0;
+	position: relative;
+}
+
+footer {
+	background-color: #181D21;
+}
+
+footer .up {
+	display: block;
+	border-radius: 2rem;
+	width: 4rem;
+	height: 4rem;
+	background-color: #525252;
+	color: #FFFFFF;
+	text-align: center;
+	line-height: 5rem;
+	font-size: 2rem;
+	font-weight: bold;
+	margin: 0 auto 0 auto;
+	position: relative;
+	top: -2rem;
+	cursor: pointer;
+}
+
+footer .up:hover {
+	text-decoration: none;
+}
+
+footer a:hover {
+	color: #FFFFFF;
+}
+
+footer h3 {
+	text-transform: uppercase;
+	font-weight: normal;
+	font-size: 1rem;
+}
+
+footer p, footer li {
+	color: #314753;
+}
+
+footer ul {
+	margin: 0;
+	padding: 0;
+}
+
+footer ul li {
+	list-style-type: none;
+}
+
+footer:after, section:after {
+	content: " ";
+	visibility: hidden;
+	display: block;
+	height: 0;
+	clear: both;
+}
+
+section:nth-of-type(1) {
+	padding-top: 5rem;
+}
+
+.content {
+	max-width: 80%;
+	margin: 0 auto 0 auto;
+	padding: 0;
+}
+
+.column1, .column2, .column3, .column4, .column5 {
+	padding: 2em 2% 3em 2%;
+}
+
+/* -------------------------------------------------------------------------- */
+
+section.white {
+	background-color: #FFFFFF;
+	color: #000000;
+}
+
+section.white p {
+	color: #000000;
+}
+
+section.light {
+	background-color: #F7F7F7;
+	color: #000000;
+}
+
+section.light p {
+	color: #000000;
+}
+
+section.light a {
+	color: #000000;
+}
+
+section.grey {
+	background-color: #505050;
+}
+
+section.dark {
+	background-color: #23292F;
+}
+
+section.dark p {
+	color: #7A7A7A;
+}
+
+section.dark a {
+	color: #FFFFFF;
+}
+
+section.green {
+	background-color: #78BE14;
+}
+
+section.green h1, section.green h2, section.green h3, section.green a {
+	color: #313131;
+}
+
+/* -------------------------------------------------------------------------- */
+
+h1, h2, h3, h4, p {
+	margin: 0;
+}
+
+p {
+	padding: 0.8rem 0 0.2rem 0;
+}
+
+h1 {
+	padding: 1.5rem 0 1rem 0;
+	font-size: 2.2rem;
+}
+
+h2 {
+	padding: 1.4em 0 0.9em 0;
+	font-size: 1.8rem;
+}
+
+h3 {
+	padding: 1.3em 0 0.8em 0;
+	font-size: 1.4rem;
+}
+
+h4 {
+	padding: 1.2em 0 0.7em 0;
+	font-size: 1.2rem;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+img {
+	max-width: 80%;
+	margin: 0;
+	display: block;
+}
+
+.center img {
+	margin: 0 auto 0 auto;
+}
+
+img:hover {
+	animation: highlight_image 0.6s;
+	position: relative;
+}
+
+@keyframes highlight_image {
+    from {
+		opacity: 1;
+		transform: scale(1, 1);
+	}
+	50% {
+		opacity: 0.7;
+		transform: scale(1.05, 1.05);
+	}
+    to {
+		opacity: 1;
+		transform: scale(1, 1);
+	}
+}
+
+.slide_in_bottom {
+	animation: slide_in_bottom 1.5s;
+	position: relative;
+	animation-timing-function: ease-in-out;
+}
+
+@keyframes slide_in_bottom {
+    from {
+		bottom: -100%;
+		opacity: 0;
+		transform: scale(1, 1);
+	}
+	70% {
+		transform: scale(1.2, 1.2);
+	}
+    to {
+		bottom: 0;
+		opacity: 1;
+		transform: scale(1, 1);
+	}
+}
