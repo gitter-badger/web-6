@@ -1,334 +1,436 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<title>GIS Hackathon Brno</title>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="stylesheet" href="style/global.css" />
-		<script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
-		<script type="text/javascript" src="js/custom.js"></script>
-	</head>
-	<body>
-		<header>
-			<ul>
-				<li><a href="#main">Hackathon</a></li>
-				<li><a href="#register">Přihlášení</a></li>
-				<li><a href="#program">Program</a></li>
-				<li><a href="#partners">Partneři</a></li>
-				<li><a href="#location">Kdy a kde</a></li>
-                <li><a href="mailto:jkdubr@me.com?subject=GISHackathon">Chceš přednášet?</a></li>
-			</ul>
-			<a class="twitter" target="_blank" href="https://twitter.com/GISHackathon"></a>
-		</header>
+<html lang="en">
 
-		<section class="white">
-			<div class="content center">
-				<div class="column1">
-					<h1>Novinka - GIS Workshopy</h1>
-					<h3>27.-28.3 2015 na PEF MENDELU</h3>
+<head>
 
-					<p class="w80 automargin">
-						Registruj se na bezplatné workshopy od specialistů v oboru. Volná místa jsou na GRASS, PostGIS a OGR2OGR.
-					</p>
-					<a href='http://gishackathon.eu/workshop/'>http://gishackathon.eu/workshop/</a>
-					</br>
-					<img src="images/workshop.jpg" alt="workshop" />
-				</div>
-			</div>
-		</section>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-		<section class="grey" id="main">
-			<div class="content center">
-				<div class="column1">
-					<h1>GIS Hackathon 2.0</h1>
-					<h3>14.-15. 11. 2014 na PEF MENDELU</h3>
+    <title>GISHackathon</title>
 
-					<p class="w80 automargin">
-						Přijď si osvojit moderní techniky <strong>práce s prostorovými daty</strong>. Prohlédni si <strong>drona</strong>. Vyzkoušej si <strong>návrh uživatelského rozhraní aplikace</strong>. Nauč se pracovat s <strong>WebGL</strong> a mnoho dalšího...
-					</p>
-					<p class="w80 automargin">
-						Nově dostanou prostor prezentovat své současné projekty <strong>firmy z oblasti GIS</strong>. V sobotu odpoledne se pak uskuteční <strong>burza nápadů</strong>, která se hodí firmě hledající posilu do týmu nebo stážistu, nebo studentovi hledající téma bakalářsky či diplomky.
-					</p>
-					<p class="w80 automargin">
-						Tento rok se bude akce konat na <strong>Mendelově univerzitě v Brně.</strong>
-					</p>
-				</div>
-				<div class="clear"></div>
-				<div class="slide_in_bottom">
-					<img src="images/maps.png" alt="mapy" />
-				</div>
-			</div>
-		</section>
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
 
-		<section class="light" id="register">
-			<div class="content center">
-				<div class="column1">
-					<h2>Poznámka pro účastníky</h2>
+    <!-- Custom Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" type="text/css">
 
-					<p></a></p>
-					<p>
-						Ti kdo se chtějí aktivně účastnit workshopů, musí disponovat vlastním notebookem s předinstalovaným <strong><a href="https://www.virtualbox.org/">VirtualBoxem</a></strong> a staženou distribucí <strong><a href="http://live.osgeo.org/en/index.html">OSGeo Live</a></strong> .
-						<br>
-						<p>Účastníky prosíme o vyplnění krátkého <strong><a href=" http://goo.gl/forms/UvxH7jBv8d">dotazníku</a></strong> .</p>
-					<!--	<iframe src="http://srazy.info/widget/attending/4617?colorscheme=light" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:300px; height:70px;" allowtransparency="true"></iframe> -->
+    <!-- Plugin CSS -->
+    <link rel="stylesheet" href="css/animate.min.css" type="text/css">
 
-					</p>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/creative.css" type="text/css">
 
-				</div>
-			</div>
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
 
-		</section>
+</head>
 
-		<section class="white" id="program">
-			<div class="content center">
-				<div class="column1">
+<body id="page-top">
 
-					<h2>Program</h2>
-				</div>
-				<div class="column2 center">
-					<img src="images/project.png" alt="project" />
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <!-- <a class="navbar-brand page-scroll" href="#page-top">Start Bootstrap</a> -->
+            </div>
 
-				<!--	<iframe class="videoframe" width="560" height="315" src="//www.youtube.com/embed/Qxth_HXTj2A" frameborder="0" allowfullscreen></iframe>-->
-				</div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a class="page-scroll" href="#about">O akci</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#presentations">Přednášející</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#sponsors">Sponzoři</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#registration">Registrace</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#where">Kdy a kde</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#contact">Kontak</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <header>
+        <div class="header-content">
+            <div class="header-content-inner">
+                <h1>GISHackathon 2015</h1>
+                <h2>20. - 21. listopadu</h2>
+
+                <p style="color: white;font-size: 20px;">Přednášky pro ty, kteří mají rádi prostorová data.</p>
+                <a href="#about" class="btn btn-primary btn-xl page-scroll">Zjisti více</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="bg-primary" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <h2 class="section-heading">Zažij víkend plný přednášek.</h2>
+                    <hr class="light">
+                    <p class="text-faded"> Pokud jsi programátor, geograf či lesník, vybereš si téma, které tě bude tento víkend bavit. Zajímáš se o prostorová data? Programuješ mapové portály? Pracuješ na magistrátu města či lítáš v oblacích s dronem? Studuješ IT či geo? Tak právě pro tebe je toto sektání!</p>
+                    <!-- <a href="#" class="btn btn-default btn-xl">Přidej se k nám!</a> -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="presentations">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Přednášející:</h2>
+                    <hr class="primary">
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                        <i class="fa fa-4x fa-diamond wow bounceIn text-primary"></i>
+                        <h3>CleverMaps</h3>
+                        <h4>MUNI</h4>
+                        <p class="text-muted">Připraví přednášku na některé z témat OpenStreetMaps, magie nad daty, leaflet, katastr.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                        <i class="fa fa-4x fa-paper-plane wow bounceIn text-primary" data-wow-delay=".1s"></i>
+                        <h3>Honza Cibulka</h3>
+                        <h4>Datastory</h4>
+                        <p class="text-muted">Jak se v Česku prodávají meteodata a kde tyto data sehnat zdarma.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                        <i class="fa fa-4x fa-newspaper-o wow bounceIn text-primary" data-wow-delay=".2s"></i>
+                        <h3>Honza Secho</h3>
+                        <h4>Česká spořitelna</h4>
+                        <p class="text-muted">Česká spořitelna: inovace, otevřená data, korporátní punk.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                        <i class="fa fa-4x fa-heart wow bounceIn text-primary" data-wow-delay=".3s"></i>
+                        <h3>Jirka Kozel</h3>
+                        <h4>MUNI</h4>
+                        <p class="text-muted">Prezentační GIS Masarykovy univerzity Kompas.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                        <i class="fa fa-4x fa-diamond wow bounceIn text-primary"></i>
+                        <h3>Vladimír Plšek</h3>
+                        <h4>TopGIS</h4>
+                        <p class="text-muted">Novinky z TopGIS. Co se odehrálo za inovace na Panorama autě za poslední rok? V jakém stavu je mapování nové ortofoto ČR? Bude publikovat data pro veřejnost?</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                        <i class="fa fa-4x fa-paper-plane wow bounceIn text-primary" data-wow-delay=".1s"></i>
+                        <h3>Alžbeta Gardoňová</h3>
+                        <h4>Geosense</h4>
+                        <p class="text-muted">Případ využití aplikace QGIS</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                        <i class="fa fa-4x fa-newspaper-o wow bounceIn text-primary" data-wow-delay=".2s"></i>
+                        <h3>Jirka Kolář</h3>
+                        <h4>Red Hat</h4>
+                        <p class="text-muted">Využití cloudové platformy FeedHenry</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                        <i class="fa fa-4x fa-heart wow bounceIn text-primary" data-wow-delay=".3s"></i>
+                        <h3>Pavel Hrabina</h3>
+                        <h4>IBM</h4>
+                        <p class="text-muted">Nestačí data skladovat, ale je potřeba jim rozumnět #bluemix #watson</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12 col-md-12 text-center">
+                    <div class="service-box">
+                        <i class="fa fa-4x fa-diamond wow bounceIn text-primary"></i>
+                        <h3>Radovan Polanský</h3>
+                        <h4>Technologické centrum Písek</h4>
+                        <p class="text-muted">Smartcities, vize a technologie.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- <section class="no-padding" id="portfolio">
+        <div class="container-fluid">
+            <div class="row no-gutter">
+                <div class="col-lg-4 col-sm-6">
+                    <a href="#" class="portfolio-box">
+                        <img src="img/portfolio/1.jpg" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Category
+                                </div>
+                                <div class="project-name">
+                                    Project Name
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="#" class="portfolio-box">
+                        <img src="img/portfolio/2.jpg" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Category
+                                </div>
+                                <div class="project-name">
+                                    Project Name
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="#" class="portfolio-box">
+                        <img src="img/portfolio/3.jpg" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Category
+                                </div>
+                                <div class="project-name">
+                                    Project Name
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="#" class="portfolio-box">
+                        <img src="img/portfolio/4.jpg" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Category
+                                </div>
+                                <div class="project-name">
+                                    Project Name
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="#" class="portfolio-box">
+                        <img src="img/portfolio/5.jpg" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Category
+                                </div>
+                                <div class="project-name">
+                                    Project Name
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="#" class="portfolio-box">
+                        <img src="img/portfolio/6.jpg" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Category
+                                </div>
+                                <div class="project-name">
+                                    Project Name
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section> -->
+    <section id="sponsors" class="sponsors">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 col-md-12 text-center">
+            <h2>Naši sponzoři</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-4 col-md-6 text-center">
+              <div class="service-box">
+                  <a href="http://clevermaps.cz">
+                    <img src="img/partners/clevermaps.png" class="img-responsive partner center-block" alt="CleverMaps">
+                  </a>
+                  <h3>CleverMaps</h3>
+              </div>
+          </div>
+          <div class="col-lg-4 col-md-6 text-center">
+              <div class="service-box">
+                  <a href="http://geosense.cz">
+                    <img src="img/partners/geosense.png" class="img-responsive partner center-block" alt="CleverMaps">
+                  </a>
+                  <h3>Geosense</h3>
+              </div>
+          </div>
+          <div class="col-lg-4 col-md-6 text-center">
+              <div class="service-box">
+                <a href="https://www.openshift.com">
+                  <img src="img/partners/openshift.png" class="img-responsive partner center-block" alt="Openshift">
+                </a>
+                <h3>OpenShift by Red Hat</h3>
+              </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-4 col-md-6 text-center">
+              <div class="service-box">
+                <a href="http://mendelu.cz">
+                  <img src="img/partners/pef_mendelu.png" class="img-responsive partner center-block" alt="Mendelu">
+                </a>
+                <h3>Mendelova univerzita v Brně</h3>
+              </div>
+          </div>
+          <div class="col-lg-4 col-md-6 text-center">
+              <div class="service-box">
+                <a href="http://www.gisportal.cz">
+                  <img src="img/partners/gisportal.png" class="img-responsive partner center-block" alt="Gisportal">
+                </a>
+                <h3>Gisportal</h3>
+              </div>
+          </div>
+          <div class="col-lg-4 col-md-6 text-center">
+              <div class="service-box">
+                <a href="http://www.geoinformace.cz/">
+                  <img src="img/partners/geoinformace.png" class="img-responsive partner center-block" alt="Gisportal">
+                </a>
 
 
-				<div class="column2 left">
-					<h3>Pátek</h3>
-					<p>
-						14:00 ... <strong>Zahájení</strong>
-					</p>
-					<p>
-						14:15 ... <strong>Sběr a zpracování dat drony</strong>
-					</p>
-					<p class="progdetail">Tomáš Jiroušek: Tomáš živě předvede sběr dat z dálkově řízeného dronu.
-						Bude následovat ukázka možností zpracování a práce s daty.
-					</p>
-					<p>
-						15:45 ... <strong>Přestávka na kávu</strong>
-					</p>
-					<p>
-						16:00 ... <strong>GeoPython</strong>
-					</p>
-					<p class="progdetail">Jáchym Čepický: Představení knihoven Python z GIS světa. Zaměření na praktický úkol.</p>
-					<p>
-						18:00 ... <strong>Přestávka na kávu</strong>
-					</p>
-					<p>
-						18:15 ... <strong>Mapy a WebGL</strong>
-					</p>
-					<p class="progdetail">
-						Stanislav Šumbera: Mapy s pohonem WebGL
-					</p>
-					<p>
-						19:00 ... <strong>Zakončení</strong>
-					</p>
-					<p class="progdetail">a přesun na #geopivo</p>
+                  <h3>Geoinformace</h3>
+              </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="info">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 col-md-12 text-center">
+              <p class="text-dark">
+                Přednášky a workshopy budou probíhat na Mendelově univerzitě v pátek odpoledne a během soboty. V pátek večer bude společný seznamovací program.
+                Videa z předchozího ročníku můžete shlédnout na <a href = "https://www.youtube.com/watch?v=_0N1NojZ74Y&index=1&list=PLiy60WaJ3ZPP3XLElQUQxX5IZnFzxZRna">youtube</a>
+                Během přestávek mezi programem bude zajištěno drobné občerstvení.
+              </p>
+          </div>
+        </div>
+      </div>
+    </section>
 
+    <aside id="registration" class="bg-dark">
+        <div class="container text-center">
+            <div class="call-to-action">
+                <h2>Závazná registrace</h2>
+                <a href="https://www.eventbrite.co.uk/e/gishackathon-tickets-18797058508" class="btn btn-default btn-xl wow tada">registruj</a>
+            </div>
+        </div>
+    </aside>
 
-
-					<h3>Sobota</h3>
-					<p>
-						08:30 ... <strong>Návrh mapového GUI</strong>
-					</p>
-					<p class="progdetail">
-						David Procházka: Jak začít s návrhem uživatelského rozhraní
-					</p>
-					<p>
-						10:00 ... <strong>Přestávka na kávu</strong>
-					</p>
-					<p>
-						10:15 ... <strong>Úvod do PostGIS</strong>
-					</p>
-					<p class="progdetail">
-						Michálek Jan (Jelen): Krátký, ale intenzivní úvod do práce s prostorovými daty v relační databázi. Zaměříme se na databázi PostgreSQL a rozšíření PostGIS. Ukážeme si, jak zprovoznit PostGIS, upravit souřadný systém, nahrát data, vytvořit geometrii ze souřadnic a provést jednoduchý prostorový dotaz. Workshop je zaměřen na lidi bez, nebo jen s minimálními zkušenostmi s PostGIS, pokusím se Vám předat základy pro další vlastní zkoumání možností práce s umístěnými daty v relačních db.
-					</p>
-					<p>
-						12:00 ... <strong>Oběd</strong>
-					</p>
-
-					<p>
-						13:30 ... <strong>Právo a GIS</strong>
-					</p>
-					<p class="progdetail">
-						Honza Cibulka
-					</p>
-					<p>
-						14:00 ... <strong>Představení partnerů</strong>
-					</p>
-					<p class="progdetail">
-						 Mendelova univerzita v Brně, @GisMentors, @CleverMapsCZ, @Geosense: Tato akce je podpořena dary a součinností dalších subjektů. Dozvíme se něco o nich a o práci, kterou dělají.
-					</p>
-					<p>
-						14:45 ... <strong>Renderování mapy nad daty OSM</strong>
-					</p>
-					<p class="progdetail">
-					 	Martin Kučera: Přehled základních komponent potřebných k tvorbě globální mapové infrastruktury nad daty OSM.
-					</p>
-					<p>
-						15:15 ... <strong>Přestávka na kávu</strong>
-					</p>
-					<p class="progdetail">
-
-					</p>
-					<p>
-						15:30 ... <strong>Vývoj v devstacku OL3 + Google Closure</strong>
-					</p>
-					<p class="progdetail">
-						Jiří Kozel: Vývoj projektu za použití nové webové mapové knihovny Open Layers3 a Google Closure Library.
-					</p>
-					<p>
-						16:15 ... <strong>Release nové knihovny Mapito</strong>
-					</p>
-					<p class="progdetail">
-						Vojtěch Dubrovský: Mapito je nástroj na jednoduché zobrazování prostorových dat na webu. Mapito tvoří mezivrstvu mezi kódem OpenLayers a webovým vývojářem. Stačí sestavit konfigurační soubor a publikovat data.
-					</p>
-					<p>
-						16:30 ... <strong>Představení OSGEO, novinky z konferencí</strong>
-					</p>
-					<p class="progdetail">
-						Jáchym Čepický: OSGEO je česká nezisková organizace bojující za dosažitelné služby, data a životní podmínky v geobusiness. Jáchym tento rok absolvoval dvě geo konference světového významu. Poví nám co je nového...).
-					</p>
-					<p>
-						17:30 ... <strong>Zavínění</strong><br/>
-					</p>
-					<p class="progdetail">
-
-					</p>
-					<p>
-						18:45 ... <strong>Pivo</strong>
-					</p>
-
-				</div>
-			</div>
-		</section>
-
-        <style>
-        img.partner{
-        max-witdh:300px;
-            padding-top: 30px;
-            padding-left: 10px;
-            height: 50px;
-            display: inline;
-        }
-        </style>
-
-		<section class="dark" id="partners">
-			<div class="content center">
-				<div class="column1">
-					<h2>Skvělí partneři akce</h2>
-
-					<h3><a href="http://clevermaps.cz">CleverMaps</a></h3>
-					<p>Skutečná location intelligence</p>
-
-
-
-					<h3>
-                        <a href="http://www.geosense.cz">Geosense</a>
-                    </h3>
-					<p>
-                    Mapový informační systém Geosense usnadňuje péči o majetek městům, obcím, těžařským společnostem i vlastníkům rozsáhlých pozemků.
+    <section id="where" class="no-padding">
+              <div class="map-overlay">
+              </div>
+              <div class="map">
+                <iframe src="http://vdubr.github.io/publications/mapito/beta_0.1/mapito.html?config=https%3A%2F%2Fgist.githubusercontent.com%2Fvdubr%2F6b202138e2224dab39f9%2Fraw%2Fgistfile1" width="100%" height="100%" frameborder="0" style="border:0"></iframe>
+              </div>
+    </section>
+    <section>
+        <div class="container">
+            <div class="row">
+              <div class="col-lg-12 col-md-12 text-center">
+                <h3>Termín</h3>
+                  <p class="text-dark">
+                      Akce začíná v pátek <strong>20. 11. 2015</strong> odpoledne.
+                      <br/>
+                      Pokračovat budeme v sobotu <strong>21. 11. 2015</strong> od rána.
                     </p>
+              </div>
+            </div>
 
+            <div class="row">
+              <div class="col-lg-12 col-md-12 text-center">
+                <h3>Místo konání</h3>
 
+                <p>
+                  Provozně ekonomická fakulta
+                  <br/>
+                  Mendelova univerzita v Brně
+                  <br/>
+                  Budova Q
+                  <br/>
+                  Zemědělská 1
+                  <br/>
+                  613 00 Brno
+                  <br/>
 
+                </p>
 
+                <h3>Doprava MHD</h3>
 
-					<h3><a href="http://gismentors.eu">GIS Mentors</a></h3>
-					<p>Školení a poradenství s důrazem na efektivitu, úsporu a jednoduchost</p>
+                <p>
+                  Na fakultu lze přijet od hlavního vlakového nádraží výlukovou <a href="http://mapy.idos.cz/idsjmk/?f=Hlavn%C3%AD%20n%C3%A1dra%C5%BE%C3%AD&t=Zem%C4%9Bd%C4%9Blsk%C3%A1&">tramvají x9</a>.<br/>
+                </p>
 
-					<h3><a href="http://mendelu.cz">Mendelova univerzita v Brně</a></h3>
-					<p>95 let vzdělává odborníky s láskou k přírodě </p>
+                <p>
+                  Také můžete od hlavního vlakového nádraží jet <a href="http://mapy.idos.cz/idsjmk/?f=Hlavn%C3%AD%20n%C3%A1dra%C5%BE%C3%AD&t=Schodov%C3%A1&">autobusem 67</a>.<br/>
+                  Pak můžete vystoupit na zastavávce Schodová a následně ulicí Schodovou vyjít přímo pod kampus univerzity.</p>
+              </div>
+            </div>
+        </div>
+    </section>
 
-					<h3><a href="https://www.openshift.com">OpenShift by Red Hat</a></h3>
-					<p>The Open Hybrid Cloud Application Platform by Red Hat</p>
+		<footer id="contact" class="footer">
 
-					<h3><a href="http://www.gisportal.cz">GISportal.cz</a></h3>
-					<p>
-                        Kvalitní, nezávislé a aktuální zpravodajství z české geoinformační komunity.
-                    </p>
-
-                    <a href="https://www.openshift.com">
-                    <img src="images/partners/openshift.png" class="partner" alt="Openshift">
-                        </a>
-
-                    <a href="http://clevermaps.cz">
-                    <img src="images/partners/clevermaps.png" class="partner" alt="CleverMaps">
-                    </a>
-
-                    <a href="http://mendelu.cz">
-                    <img src="images/partners/pef_mendelu.png" class="partner" alt="Mendelu">
-                    </a>
-
-                    <a href="http://www.gisportal.cz">
-                    <img src="images/partners/gisportal.png" class="partner" alt="Gisportal">
-                    </a>
-
-                    <a href="http://www.geosense.cz">
-                    <img src="images/partners/geosense.png" class="partner" alt="Geosense">
-                    </a>
-
-				</div>
-			</div>
-		</section>
-
-		<section class="green center" id="location">
-			<div class="column1">
-				<h2>Kdy a kde</h2>
-			</div>
-			<div class="column2">
-
-				<h3>Termín</h3>
-
-				<p>
-					Akce začíná v pátek <strong>14. 11. 2014</strong> ve 14:00 odpoledne.
-					<br/>
-					Pokračovat budeme v sobotu <strong>15. 11. 2014</strong> od 8:30 ráno.
-				</p>
-
-				<h3>Místo konání</h3>
-
-				<p>
-					Provozně ekonomická fakulta
-					<br/>
-					Mendelova univerzita v Brně
-					<br/>
-					Budova Q
-					<br/>
-					Zemědělská 1
-					<br/>
-					613 00 Brno
-					<br/>
-
-				</p>
-
-				<h3>Doprava MHD</h3>
-
-				<p>
-					Na fakultu lze přijet od hlavního vlakového nádraží výlukovou <a href="http://mapy.idos.cz/idsjmk/?f=Hlavn%C3%AD%20n%C3%A1dra%C5%BE%C3%AD&t=Zem%C4%9Bd%C4%9Blsk%C3%A1&">tramvají x9</a>.<br/>
-	 				(Kvůli přestavbě na ulici Milady Horákové).<br/>
-					Vystupte na zastávce Zemědělská.</p>
-
-				<p>
-					Také můžete od hlavního vlakového nádraží jet <a href="http://mapy.idos.cz/idsjmk/?f=Hlavn%C3%AD%20n%C3%A1dra%C5%BE%C3%AD&t=Schodov%C3%A1&">autobusem 67</a>.<br/>
-					Pak můžete vystoupit na zastavávce Schodová a následně ulicí Schodovou vyjít přímo pod kampus univerzity.</p>
-			</div>
-
-			<div class="column2">
-				<!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2606.5259918865568!2d16.61485899999999!3d49.20955099999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47129466f4a76ded%3A0xfb168cb66b02fdb!2sProvozn%C4%9B+ekonomick%C3%A1+fakulta!5e0!3m2!1scs!2scz!4v1412429449049" width="450" height="450" frameborder="0" style="border:0"></iframe> -->
-				<iframe src="http://vdubr.github.io/publications/mapito/beta_0.1/mapito.html?config=https%3A%2F%2Fgist.githubusercontent.com%2Fvdubr%2F6b202138e2224dab39f9%2Fraw%2Fgistfile1" width="450" height="450" frameborder="0" style="border:0"></iframe>
-			</div>
-		</section>
-
-		<footer>
-			<a href="#main" class="up">^</a>
-
-			<div class="content">
-				<div class="column5">
-
-				</div>
-			</div>
-			<div class="content">
-				<div class="column5">
+			<div class="row">
+				<div class="col-lg-4 text-center">
 					<h3>Přijďte za námi</h3>
 					<p>
 						PEF MENDELU
@@ -341,17 +443,16 @@
 					</p>
 				</div>
 
-				<div class="column5">
+				<div class="col-lg-4 text-center">
 					<h3>Socializujte se</h3>
-					<ul>
+					<ul class="list-unstyled">
 						<li><a href="https://twitter.com/GISHackathon">Twitter</a></li>
-						<li><a href="http://srazy.info/gishackathon/4617">Srazy</a></li>
 					</ul>
 				</div>
 
-				<div class="column5">
+				<div class="col-lg-4 text-center">
 					<h3>Kontaktujte nás</h3>
-					<ul>
+					<ul class="list-unstyled">
 						<li><a href="mailto:jkdubr@me.com ">Jakub Dubrovský</a></li>
 						<li><a href="mailto:vdubr@icloud.com ">Vojtěch Dubrovský</a></li>
 						<li><a href="mailto:david.prochazka@mendelu.cz">David Procházka</a></li>
@@ -360,17 +461,20 @@
 			</div>
 		</footer>
 
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
 
-        <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
 
-  ga('create', 'UA-55830632-1', 'auto');
-  ga('send', 'pageview');
+    <!-- Plugin JavaScript -->
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/jquery.fittext.js"></script>
+    <script src="js/wow.min.js"></script>
 
-</script>
+    <!-- Custom Theme JavaScript -->
+    <script src="js/creative.js"></script>
 
-	</body>
+</body>
+
 </html>
