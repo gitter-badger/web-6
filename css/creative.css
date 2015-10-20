@@ -60,6 +60,15 @@ a:focus {
     color: #eb3812;
 }
 
+a.btn-registration {
+  border: 2px solid transparent;
+}
+
+a.btn-registration:focus,
+a.btn-registration:hover {
+  border: 2px solid black;
+}
+
 h1,
 h2,
 h3,
