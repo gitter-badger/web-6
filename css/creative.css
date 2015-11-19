@@ -36,9 +36,10 @@ a.logo-gishack {
 }
 
 .map-overlay {
-    position: absolute;
-    width: 100%;
-    height: 300px;
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  height: 300px;
 }
 
 body {
