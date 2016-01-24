@@ -1,0 +1,149 @@
+body{ margin:0px 0px; }
+
+@font-face {
+    font-family: starwars;
+    src: url(./font/starjedi/Starjedi.ttf);
+}
+
+#hero{
+  background-image:url(./img/space.png);
+  background-size:cover;
+  position:relative;
+  height:100vh;
+}
+
+.header h1{
+  font-size: 83px;
+  margin-top: 10px;
+}
+.header h4{
+  font-size: 18px;
+  color: white;
+}
+
+
+@media (max-width: 720px) {
+    .header h1{font-size: 50px;}
+    .header h4{font-size: 13px;}
+}
+
+@media (max-width: 440px) {
+    .header h1{font-size: 30px;}
+    .header h4{font-size: 11px;}
+}
+
+img.partner{
+  height: 300px;
+}
+
+
+.header h1{
+  /*font-size: 93px;*/
+  /*text-shadow: 0px 0px 2px yellow;*/
+  text-shadow: 2px 2px 1px yellow,
+              -2px -2px 1px yellow,
+              -2px 2px 1px yellow,
+              2px -2px 1px yellow;
+  color: black;
+}
+.header{
+  font-size: 93px;
+
+  font-family: starwars;
+  position:absolute;
+  top:50%;
+  text-align:center;
+  width:100%;
+  /*color:#fff;*/
+  /*font-size:36px;*/
+  -ms-transform: translate(0,-50%); /* IE 9 */
+  -webkit-transform: translate(0,-50%); /* Safari */
+  transform: translate(0,-50%);
+
+}
+
+#content{
+  padding:100px 50px;
+  text-align:center;
+  width:80%;
+  margin:0px auto;
+}
+
+#content h2{
+  margin:0px 0px 30px 0px;
+}
+
+#footer{
+  padding:30px 0px;
+  text-align:center;
+  background:#ddd;
+}
+
+p.story{
+  font-family: "Droid Sans", arial, verdana, sans-serif;
+  font-size: 34px;
+  background-color: #000;
+
+}
+
+#idea{
+  height: 100%;
+  background: #000;
+  color: #ff6;
+  font-family: "Droid Sans", arial, verdana, sans-serif;
+
+}
+
+.idea-text{
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+#roles{
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+
+footer{
+  background: #000;
+  color: #ff6;
+}
+
+footer a{
+  font-weight: bolder;
+  color: #F5C95F;
+}
+
+footer a:hover{
+  color: #ff6;
+}
+
+.force{
+    margin-top: 50px;
+}
+
+.hash{
+  color: #808080;
+  font-size: 16px;
+}
+
+.map-overlay {
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    height: 300px;
+}
+
+.map {
+    height: 300px;
+}
+
+.registration {
+    height: 400px;
+}
+
+.idea-text p{
+  text-align-last: center;
+  text-align: justify;
+}
